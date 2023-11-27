@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .menu-item {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 15px;
+      width: 200px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Restaurant Menu</h1>
+  </header>
+
+  <section id="menu">
+
+    <!-- Example Menu Items -->
+    <div class="menu-item">
+      <h3>Burger</h3>
+      <p>Delicious beef burger with lettuce, tomato, and cheese.</p>
+      <p>Price: $8.99</p>
+    </div>
+
+    <div class="menu-item">
+      <h3>Pasta</h3>
+      <p>Spaghetti with marinara sauce and meatballs.</p>
+      <p>Price: $12.99</p>
+    </div>
+
+    <div class="menu-item">
+      <h3>Salad</h3>
+      <p>Fresh garden salad with mixed greens and vinaigrette.</p>
+      <p>Price: $6.99</p>
+    </div>
+
+  </section>
+
+  <script>
+    // You can use JavaScript to dynamically add menu items, retrieve data from a server, etc.
+    // For simplicity, this example is static.
+
+    // Example of adding a new menu item dynamically
+    const newMenuItem = document.createElement('div');
+    newMenuItem.classList.add('menu-item');
+    newMenuItem.innerHTML = `
+      <h3>Chicken Wrap</h3>
+      <p>Grilled chicken wrapped in a tortilla with veggies.</p>
+      <p>Price: $9.99</p>
+    `;
+
+    // Append the new menu item to the menu section
+    document.getElementById('menu').appendChild(newMenuItem);
+  </script>
+
+</body>
+</html>
